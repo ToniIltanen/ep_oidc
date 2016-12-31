@@ -13,21 +13,21 @@ This plugin is mostly based on ep_oauth2 plugin by [HumanBrainProject](https://g
 You must add the required keys to etherpad settings (here with example values):
 
 ``` json
-"users": {
+ "users": {
   "oidc": {
-      issuer: "https://auth.yourserver.com",
-      authorizationURL: "https://auth.yourserver.com/auth",
-      tokenURL: "https://auth.yourserver.com/token",
-      clientID: "YOUR_CLIENT_ID",
-      clientSecret: "YOUR_CLIENT_SECRET",
-      userinfoURL: "https://auth.yourserver.com/me",
-      usernameKey: "name",
-      useridKey: "sub",
-      passReqToCallback: false,
-      skipUserProfile: false,
-      callbackURL: "https://etherpad.yourserver.com/auth/callback",
-      responseType: "id_token",
-      scope: ["profile"]
+      "issuer": "https://auth.yourserver.com",
+      "authorizationURL": "https://auth.yourserver.com/auth",
+      "tokenURL": "https://auth.yourserver.com/token",
+      "clientID": "YOUR_CLIENT_ID",
+      "clientSecret": "YOUR_CLIENT_SECRET",
+      "userinfoURL": "https://auth.yourserver.com/me",
+      "usernameKey": "name",
+      "useridKey": "sub",
+      "passReqToCallback": false,
+      "skipUserProfile": false,
+      "callbackURL": "https://etherpad.yourserver.com/auth/callback",
+      "responseType": "id_token",
+      "scope": ["profile"]
   }
  }
 ```
