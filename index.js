@@ -71,7 +71,7 @@ exports.expressConfigure = function(hook_name, context) {
         accessToken: accessToken,
         refreshToken: refreshToken
       };
-      authorManager.createAuthorIfNotExistsFor(data['sub'], data['name'], function(err, authorId) {
+      authorManager.createAuthorIfNotExistsFor(data[idKey], data[usernameKey], function(err, authorId) {
         if (err) {
           return cb(err);
         }
