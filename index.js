@@ -18,15 +18,13 @@ else {
     if (!settings.users.oidc.userinfoURL) throw new Error('ep_oidc plugin requires a userinfoURL setting!');
     if (!settings.users.oidc.usernameKey) throw new Error('ep_oidc plugin requires a usernameKey setting!');
     if (!settings.users.oidc.useridKey) throw new Error('ep_oidc plugin requires a useridKey setting!');
-    if (!settings.users.oidc.passReqToCallback) throw new Error('ep_oidc plugin requires a passReqToCallback setting!');
-    if (!settings.users.oidc.skipUserProfile) throw new Error('ep_oidc plugin requires a skipUserProfile setting!');
     if (!settings.users.oidc.callbackURL) throw new Error('ep_oidc plugin requires a callbackURL setting!');
     if (!settings.users.oidc.responseType) throw new Error('ep_oidc plugin requires a responseType setting!');
     if (!settings.users.oidc.scope) throw new Error('ep_oidc plugin requires a scope setting!');
 }
 
 // Settings Variables
-var issuer = settings.users.oidc.issuer;
+var issuer = setings.users.oidc.issuer;
 var authorizationURL = settings.users.oidc.authorizationURL;
 var tokenURL = settings.users.oidc.tokenURL;
 var clientID = settings.users.oidc.clientID;
@@ -34,8 +32,8 @@ var clientSecret = settings.users.oidc.clientSecret;
 var userinfoURL = settings.users.oidc.userinfoURL;
 var usernameKey = settings.users.oidc.usernameKey;
 var idKey = settings.users.oidc.useridKey;
-var passReqToCallback = settings.user.oidc.passReqToCallback;
-var skipUserProfile = settings.user.oidc.skipUserProfile;
+var passReqToCallback = settings.user.oidc.passReqToCallback ? true : false;
+var skipUserProfile = settings.user.oidc.skipUserProfile ? true : false;
 var callbackURL = settings.user.oidc.callbackURL;
 var responseType = settings.user.oidc.responseType;
 var scope = settings.user.oidc.scope; //openid added automatically, no need to add that
