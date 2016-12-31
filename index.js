@@ -7,7 +7,7 @@ var OpenIDConnectStrategy = require('passport-openidconnect').Strategy;
 
 // Settings variables check
 if(!settings.users || !settings.users.oidc) {
-    throw new Error('ep_oidc plugin requires users and oidcs settings!');
+    throw new Error('ep_oidc plugin requires users and oidc settings!');
 }
 else {
     if (!settings.users.oidc.issuer) throw new Error('ep_oidc plugin requires a issuer setting!');
