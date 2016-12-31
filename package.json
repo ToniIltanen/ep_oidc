@@ -21,7 +21,6 @@
     "ep_etherpad_lite": ">=1.6.1"
   },
   "dependencies": {
-    "MODULE": "0.3.20",
     "async-stacktrace": "0.0.2",
     "passport-openidconnect": "0.0.1",
     "request": "^2.79.0"
