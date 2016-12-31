@@ -24,7 +24,7 @@ else {
 }
 
 // Settings Variables
-var issuer = setings.users.oidc.issuer;
+var issuer = settings.users.oidc.issuer;
 var authorizationURL = settings.users.oidc.authorizationURL;
 var tokenURL = settings.users.oidc.tokenURL;
 var clientID = settings.users.oidc.clientID;
