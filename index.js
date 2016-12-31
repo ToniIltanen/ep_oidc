@@ -32,11 +32,11 @@ var clientSecret = settings.users.oidc.clientSecret;
 var userinfoURL = settings.users.oidc.userinfoURL;
 var usernameKey = settings.users.oidc.usernameKey;
 var idKey = settings.users.oidc.useridKey;
-var passReqToCallback = settings.user.oidc.passReqToCallback ? true : false;
-var skipUserProfile = settings.user.oidc.skipUserProfile ? true : false;
-var callbackURL = settings.user.oidc.callbackURL;
-var responseType = settings.user.oidc.responseType;
-var scope = settings.user.oidc.scope; //openid added automatically, no need to add that
+var passReqToCallback = settings.users.oidc.passReqToCallback ? true : false;
+var skipUserProfile = settings.users.oidc.skipUserProfile ? true : false;
+var callbackURL = settings.users.oidc.callbackURL;
+var responseType = settings.users.oidc.responseType;
+var scope = settings.users.oidc.scope; //openid added automatically, no need to add that
 
 
 exports.expressConfigure = function(hook_name, context) {
