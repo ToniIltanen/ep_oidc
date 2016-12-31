@@ -2,7 +2,20 @@
   "name": "ep_oidc",
   "version": "0.0.1",
   "description": "OIDC Auth plugin for etherpad-lite",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "etherpad",
+    "plugin",
+    "ep",
+    "oidc",
+    "OpenID Connect",
+    "passport",
+    "hbp"
+  ],
   "author": "ToniIltanen (Toni Iltanen) <toni.iltanen@codecontrol.fi>",
+  "license": "MIT",
   "contributors": [],
   "peerDependencies": {"ep_etherpad_lite":">=1.6.1"},
   "dependencies": {
