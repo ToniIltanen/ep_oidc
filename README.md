@@ -12,6 +12,7 @@ This plugin is mostly based on ep_oauth2 plugin by [HumanBrainProject](https://g
 
 You must add the required keys to etherpad settings (here with example values):
 
+``` json
 "users": {
   "oidc": {
       issuer: "https://auth.yourserver.com",
@@ -29,6 +30,7 @@ You must add the required keys to etherpad settings (here with example values):
       scope: ["profile"]
   }
  }
+```
 
  ## Authorization
 
