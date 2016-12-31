@@ -4,11 +4,12 @@
   "description": "OIDC Auth plugin for etherpad-lite",
   "author": "ToniIltanen (Toni Iltanen) <toni.iltanen@codecontrol.fi>",
   "contributors": [],
+  "peerDependencies": {"ep_etherpad_lite":">=1.6.1"},
   "dependencies": {
     "MODULE": "0.3.20",
     "passport-openidconnect": "0.0.1"
   },
-    "peerDependencies": {"ep_etherpad_lite":">=1.6.1"},
+
   "engines": {
     "node": ">= 0.6.0"
   }
