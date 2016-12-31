@@ -36,7 +36,8 @@ You must add the required keys to etherpad settings (here with example values):
 Note, that this plugin does not implement authorization for your etherpad-lite, 
 so you must handle the authorization hook with another plugin (or create one yourself).
 Without the authorization, your etherpad-lite installation will not allow the user a permission to the pads,
-even though authenticated with ep_oidc.
+even though authenticated with ep_oidc. In example, going to the admin page with ep_oidc used as authentication and not implementing authorization,
+will cause an endless loop of requests (auth passes, but not authorized).
 
 ## License
 
