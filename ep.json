@@ -1,0 +1,13 @@
+{
+  "parts": [
+    {
+      "name": "main",
+      "hooks": {
+        "authenticate": "ep_oidc/index.js:authenticate",
+        "expressConfigure": "ep_oidc/index.js:expressConfigure",
+        "expressCreateServer": "ep_oidc/index.js:expressCreateServer",
+        "handleMessage": "ep_oidc/index.js:handleMessage"
+      }
+    }
+  ]
+}
