@@ -37,3 +37,7 @@ Note, that this plugin does not implement authorization for your etherpad-lite,
 so you must handle the authorization hook with another plugin (or create one yourself).
 Without the authorization, your etherpad-lite installation will not allow the user a permission to the pads,
 even though authenticated with ep_oidc.
+
+## License
+
+MIT
