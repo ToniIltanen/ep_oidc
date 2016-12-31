@@ -6,19 +6,24 @@ var passport = require('passport');
 var OpenIDConnectStrategy = require('passport-openidconnect').Strategy;
 
 // Settings variables check
-if (!settings.users.oidc.issuer) throw new Error('ep_oidc plugin requires a issuer setting!');
-if (!settings.users.oidc.authorizationURL) throw new Error('ep_oidc plugin requires a authorizationURL setting!');
-if (!settings.users.oidc.tokenURL) throw new Error('ep_oidc plugin requires a tokenURL setting!');
-if (!settings.users.oidc.clientID) throw new Error('ep_oidc plugin requires a clientID setting!');
-if (!settings.users.oidc.clientSecret) throw new Error('ep_oidc plugin requires a clientSecret setting!');
-if (!settings.users.oidc.userinfoURL) throw new Error('ep_oidc plugin requires a userinfoURL setting!');
-if (!settings.users.oidc.usernameKey) throw new Error('ep_oidc plugin requires a usernameKey setting!');
-if (!settings.users.oidc.useridKey) throw new Error('ep_oidc plugin requires a useridKey setting!');
-if (!settings.users.oidc.passReqToCallback) throw new Error('ep_oidc plugin requires a passReqToCallback setting!');
-if (!settings.users.oidc.skipUserProfile) throw new Error('ep_oidc plugin requires a skipUserProfile setting!');
-if (!settings.users.oidc.callbackURL) throw new Error('ep_oidc plugin requires a callbackURL setting!');
-if (!settings.users.oidc.responseType) throw new Error('ep_oidc plugin requires a responseType setting!');
-if (!settings.users.oidc.scope) throw new Error('ep_oidc plugin requires a scope setting!');
+if(!settings.users || !settings.users.oidc) {
+    throw new Error('ep_oidc plugin requires users and oidcs settings!');
+}
+else {
+    if (!settings.users.oidc.issuer) throw new Error('ep_oidc plugin requires a issuer setting!');
+    if (!settings.users.oidc.authorizationURL) throw new Error('ep_oidc plugin requires a authorizationURL setting!');
+    if (!settings.users.oidc.tokenURL) throw new Error('ep_oidc plugin requires a tokenURL setting!');
+    if (!settings.users.oidc.clientID) throw new Error('ep_oidc plugin requires a clientID setting!');
+    if (!settings.users.oidc.clientSecret) throw new Error('ep_oidc plugin requires a clientSecret setting!');
+    if (!settings.users.oidc.userinfoURL) throw new Error('ep_oidc plugin requires a userinfoURL setting!');
+    if (!settings.users.oidc.usernameKey) throw new Error('ep_oidc plugin requires a usernameKey setting!');
+    if (!settings.users.oidc.useridKey) throw new Error('ep_oidc plugin requires a useridKey setting!');
+    if (!settings.users.oidc.passReqToCallback) throw new Error('ep_oidc plugin requires a passReqToCallback setting!');
+    if (!settings.users.oidc.skipUserProfile) throw new Error('ep_oidc plugin requires a skipUserProfile setting!');
+    if (!settings.users.oidc.callbackURL) throw new Error('ep_oidc plugin requires a callbackURL setting!');
+    if (!settings.users.oidc.responseType) throw new Error('ep_oidc plugin requires a responseType setting!');
+    if (!settings.users.oidc.scope) throw new Error('ep_oidc plugin requires a scope setting!');
+}
 
 // Settings Variables
 var issuer = settings.users.oidc.issuer;
