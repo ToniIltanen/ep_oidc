@@ -1,6 +1,6 @@
 {
   "name": "ep_oidc",
-  "version": "0.0.2",
+  "version": "0.0.1",
   "description": "OIDC Auth plugin for etherpad-lite",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
@@ -18,7 +18,7 @@
   "license": "MIT",
   "contributors": [],
   "peerDependencies": {
-    "ep_etherpad_lite": ">=1.6.1"
+    "ep_etherpad_lite": ">=1.5.1"
   },
   "dependencies": {
     "async-stacktrace": "0.0.2",
