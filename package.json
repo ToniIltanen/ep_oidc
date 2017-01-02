@@ -17,9 +17,6 @@
   "author": "ToniIltanen (Toni Iltanen) <toni.iltanen@codecontrol.fi>",
   "license": "MIT",
   "contributors": [],
-  "peerDependencies": {
-    "ep_etherpad_lite": ">=1.5.1"
-  },
   "dependencies": {
     "async-stacktrace": "0.0.2",
     "passport-openidconnect": "0.0.1",
