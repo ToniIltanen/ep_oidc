@@ -1,6 +1,13 @@
 ep_oidc
 =======
 
+## This plugin is out of date
+
+You can find a newer and maintained version from https://github.com/ether/ep_openid_connect.
+Please treat this plugin as a non-maintained, obsolete version of oidc support for etherpad.
+
+## General
+
 OIDC auth plugin for etherpad-lite
 
 This plugin uses a passport.js strategy for OpenID Connect authentication,
